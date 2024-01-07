@@ -1,21 +1,47 @@
-
 <html>
-<body>
+
     <div class="weather-container">
-        <div class="sun">
-            <div class="ray ray-one"></div>
-            <div class="ray ray-two"></div>
-            <div class="ray ray-three"></div>
-            <div class="ray ray-four"></div>
-            <div class="ray ray-five"></div>
-            <div class="ray ray-six"></div>
-            <div class="ray ray-seven"></div>
-            <div class="ray ray-eight"></div>
-            <div class="ray ray-nine"></div>
-            <div class="ray ray-teen"></div>
-            <div class="ray ray-eleven"></div>
-            <div class="ray ray-twelve"></div>
+        <div class="box-weather">
+            <div class="text">
+                <a>Weather</a>
+                <div class="icon-weather">
+                    <i class="fas fa-temperature-high"></i>
+                </div>
+            </div>
+            <div class="text-location">
+                <a>Saturday, 21:00 hrs.</a> <br>
+                <a>Buenos Aires, Argentina</a>
+            </div>
+
+            <div class="temperature">
+                <img class="icon-sunny" [src]="iconSunny" alt="Sunny" />
+                <a class="text-temperature">27°C</a>
+            </div>
+            <div class="text-weather">
+                <a>Chance of precipitation: 0%</a> <br>
+                <a>Humidity: 67%</a> <br>
+                <a>Wind: 6 km/h</a>
+            </div>
+        </div>
+        <div class="box-cloud">
+            <div class="cloud"></div>
+        </div>
+        <div class="box-sun">
+            <div class="sun">
+                <div class="ray ray-one"></div>
+                <div class="ray ray-two"></div>
+                <div class="ray ray-three"></div>
+                <div class="ray ray-four"></div>
+                <div class="ray ray-five"></div>
+                <div class="ray ray-six"></div>
+                <div class="ray ray-seven"></div>
+                <div class="ray ray-eight"></div>
+                <div class="ray ray-nine"></div>
+                <div class="ray ray-teen"></div>
+                <div class="ray ray-eleven"></div>
+                <div class="ray ray-twelve"></div>
+            </div>
         </div>
     </div>
-</body>
+
 </html>

@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./visual-weather.component.css']
 })
 export class VisualWeatherComponent {
+  iconSunny: string = '../../assets/icons/sunny.svg';
 
 }
