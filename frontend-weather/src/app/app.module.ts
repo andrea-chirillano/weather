@@ -4,11 +4,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { VisualWeatherComponent } from './visual-weather/visual-weather.component';
+import { SunnyComponent } from './sunny/sunny.component';
+import { CloudComponent } from './cloud/cloud.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    VisualWeatherComponent
+    VisualWeatherComponent,
+    SunnyComponent,
+    CloudComponent
   ],
   imports: [
     BrowserModule,
