@@ -6,8 +6,8 @@
         </div>
     </div>
     <div class="text-location">
-        <form action="" method="POST" class="get-weather">
-            <select name="" id="country">
+        <form (ngSubmit)="getWeatherInformation()" class="get-weather">
+            <select name="countryCode" id="countryCode">
                 <optgroup label="Select from the list">
                 <option disabled selected value="">Select the country</option>
                 <option value="AD">Andorra</option>
@@ -262,23 +262,24 @@
             </optgroup>
             </select>
             <br />
-            <input type="text" id="cityInput" name="city" placeholder="Enter your city" />
+            <input type="text" id="cityInput" name="cityInput" placeholder="Enter your city" />
             <br />
             <br />
-            <input type="submit" name="" id="" class="get-weather-information" value="Get weather information" />
+            <input type="submit" class="get-weather-information" value="Get weather information" />
             <br />
         </form>
-        <a>Saturday, 21:00 hrs.</a> <br />
-        <a>Buenos Aires, Argentina</a>
+        <a>Saturday, {{ exactTime }}.</a> <br />
+        <a>{{ cityInput }}, {{ selectedCountry }}</a>
     </div>
 
     <div class="temperature">
         <img class="icon-sunny" [src]="iconSunny" alt="Sunny" />
-        <a class="text-temperature">27°C</a>
+        <a class="text-temperature">{{ temperature }}°C</a>
     </div>
     <div class="text-weather">
-        <a>Chance of precipitation: 0%</a> <br />
-        <a>Humidity: 67%</a> <br />
-        <a>Wind: 6 km/h</a>
+        <a>Weather: {{ weather }}</a> <br />
+        <a>Chance of precipitation: {{ precipitationProbability }}%</a> <br />
+        <a>Humidity: {{ humidity }}%</a> <br />
+        <a>Wind: {{ windSpeed }} km/h</a>
     </div>
 </div>
