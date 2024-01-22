@@ -1,3 +1,66 @@
+@media screen and (min-width: 1100px) {
+    .color-circle{
+        width: 200px;
+        height: 200px;
+    }
+
+    .sun{
+        width: 200px;
+        height: 200px;
+    }
+
+    .ray{
+        width: 30px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .box-sun {
+        transform: translateX(-320%) translateY(-95%) scale(60%);
+    }
+
+    .color-circle{
+        width: 200px;
+        height: 200px;
+    }
+
+    .sun{
+        width: 200px;
+        height: 200px;
+    }
+
+    .ray{
+        width: 30px;
+        height: 50px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .box-sun {
+        transform: translateX(-320%) translateY(-95%) scale(60%);
+    }
+
+    .color-circle{
+        width: 200px;
+        height: 200px;
+    }
+
+    .sun{
+        width: 200px;
+        height: 200px;
+    }
+
+    .ray{
+        width: 30px;
+        height: 50px;
+    }
+
+
+}
+
 .box-sun {
     position: relative;
     bottom: 0px;
@@ -5,16 +68,24 @@
     z-index: -2;
 }
 
+.color-circle {
+    position: relative;
+    background: linear-gradient(to top, orange, yellow);
+    border-radius: 50%;
+    margin-right: 30%;
+    left: 0px;
+    z-index: 1;
+}
 
 .sun {
     position: relative;
     width: 200px;
     height: 200px;
-    background: linear-gradient(to top, yellow, orange);
     border-radius: 50%;
     margin-right: 30%;
     left: 0px;
     animation: rotateSun 10s linear infinite;
+    z-index: -1;
 }
 
 @keyframes rotateSun {
@@ -29,9 +100,6 @@
 
 .ray {
     position: absolute;
-    width: 30px;
-
-    height: 50px;
     border-left: 12.5px solid transparent;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     bottom: 215px;
