@@ -1,16 +1,6 @@
 @font-face {
-    font-family: "OpenSans-Medium";
-    src: url("../../assets/fonts/Open_Sans/OpenSans-Medium.ttf") format("truetype");
-}
-
-@font-face {
     font-family: "OpenSans-SemiBold";
     src: url("../../assets/fonts/Open_Sans/OpenSans-SemiBold.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: "InclusiveSans_Regular";
-    src: url("../../assets/fonts/Inclusive_Sans/InclusiveSans-Regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -130,8 +120,6 @@
 
 }
 
-
-
 .text {
     font-family: "Montserrat-SemiBold", sans-serif;
     color: white;
@@ -188,7 +176,6 @@
     color: rgb(0, 2, 124);
     background-color: #f4f4f4;
 }
-
 
 .get-weather-information {
     background-color: #3498db;
