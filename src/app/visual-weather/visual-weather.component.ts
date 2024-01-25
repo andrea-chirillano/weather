@@ -68,10 +68,8 @@ export class VisualWeatherComponent {
           this.humidity = formattedData.humidity || 0;
           this.windSpeed = formattedData.windSpeed || 0;
 
-          // Change the status to display information after receiving the response
           this.showWeatherInfo = true;
 
-          // Hide form elements after receiving response
           this.showFormElements = false;
 
           console.log('Received data:', data);
@@ -81,7 +79,6 @@ export class VisualWeatherComponent {
           console.error('Error fetching weather data:', error);
         },
         complete: () => {
-          // Lógica cuando la operación está completa (equivalente a la función complete anterior)
           console.log('Weather data fetching complete');
         }
     });

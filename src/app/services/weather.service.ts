@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import * as moment from 'moment-timezone';
+import * as moment from 'moment';
+import { tz } from 'moment-timezone';
+
 
 @Injectable({
   providedIn: 'root',
@@ -721,10 +723,12 @@ export class WeatherService {
   
   getTimeInfo(timestamp: number, timezone: string): string {
     if (timezone != '') {
-      const exactTime = moment.unix(timestamp).tz(timezone);
+      const exactTime = moment.unix(timestamp);
+      const timeZoneAdjustedTime = tz(exactTime, timezone);
 
-      this.dayOfWeek = exactTime.format('dddd');
-      this.timeOfDay = exactTime.format('h:mm A');
+
+      this.dayOfWeek = timeZoneAdjustedTime.format('dddd');
+      this.timeOfDay = timeZoneAdjustedTime.format('h:mm A');
       const timeFormat = this.dayOfWeek + ', ' + this.timeOfDay;
 
       return timeFormat;
