@@ -92,6 +92,7 @@
     .text-weather{
         font-size: 10px;
     }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -142,6 +143,10 @@
 
     .text-weather{
         transform: translateY(-50%);
+    }
+
+    .icon-sunny{
+        right: 5vh;
     }
 
 }
@@ -244,12 +249,11 @@
 }
 
 .icon-sunny {
-    fill: white;
-    width: 100px;
-    height: 100px;
+    color: white;
     position: absolute;
     top: -100px;
-    right: 0px;
+    width: 10vw;
+    font-size: 80px;
 }
 
 .location-information {
