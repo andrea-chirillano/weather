@@ -283,11 +283,11 @@
             <br />
         </div>
         <div *ngIf="showWeatherInfo">
-            <a class="location-information">{{ cityInput }}, {{ selectedCountry }}</a>
+            <a class="location-information" style="white-space: pre-line;">{{ cityInput }}, {{ selectedCountry }}</a>
             <br />
-            <a class="datetime-information">{{ exactTime }}.</a> <br />
+            <a class="datetime-information" style="white-space: pre-line;">{{ exactTime }}.</a> <br />
             <div class="temperature" id="temperature-container">
-                <img class="icon-sunny" [src]="iconSunny" alt="Sunny" />
+                <img class="icon-sunny" src="../../assets/icons/sunny.png" alt="Sunny" />
                 <a class="text-temperature">{{ temperature }}°C</a>
             </div>
             <div class="text-weather" id="text-weather-container">
